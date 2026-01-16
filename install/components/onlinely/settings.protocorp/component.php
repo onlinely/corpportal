@@ -6,12 +6,12 @@ if(!$USER->IsAdmin()){
 	return false;
 }
 
-if(	!\Bitrix\Main\Loader::includeModule("protobyte.protocorp")){
+if(	!\Bitrix\Main\Loader::includeModule("onlinely.protocorp")){
 	return false;
 }
 	$arResult = array();
 
-	$ProtoSettings = Protobyte\Protocorp\ProtoSettingsCorp::getInstance();
+	$ProtoSettings = Onlinely\Protocorp\ProtoSettingsCorp::getInstance();
 	$arResult["CURRENT_SETTINGS"] = $ProtoSettings->getCurrentSettings();
 	$arResult["DEFAULT_SETTINGS"] = $ProtoSettings->getDefaultSettings();
 	$arResult["COLOR_ARRAY"] = $ProtoSettings->setColorThemes();

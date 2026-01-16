@@ -7,7 +7,7 @@ $arTemplate = array (
   'TYPE' => '',
   'EDITOR_STYLES' => 
   array (
-    0 => '/local/templates/protobyte_protocorp/styles.css',
+    0 => '/local/templates/onlinely_protocorp/styles.css',
   ),
 );
 ?>

@@ -5,8 +5,8 @@ $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVE
 $host = $_SERVER['HTTP_HOST'];
 $curPage = $APPLICATION->GetCurPage(true);
 $GLOBALS['full_url'] = $protocol . $host . $curPage;
-if(\Bitrix\Main\Loader::includeModule("protobyte.protocorp")){
-	$ProtoSettings = \Protobyte\Protocorp\ProtoSettingsCorp::getInstance();
+if(\Bitrix\Main\Loader::includeModule("onlinely.protocorp")){
+	$ProtoSettings = \Onlinely\Protocorp\ProtoSettingsCorp::getInstance();
 	$arTemplateSettings = $ProtoSettings->getCurrentSettings();
 	$FILE_NAME_COLOR = 'FILE_NAME_COLOR_' . SITE_ID;
 };

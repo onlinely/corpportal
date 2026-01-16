@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Контакты");
         <b>Сотовый:</b>	+7 (800) 01-02-03
     </p>
     <p>
-        <b>Эл.почта</b><b>:</b> <a href="mailto:info@protobyte.ru">info@protobyte.ru</a>
+        <b>Эл.почта</b><b>:</b> <a href="mailto:info@onlinely.ru">info@onlinely.ru</a>
     </p>
     <p>
         <b>Офис:</b> Москва, ул. Победы, дом 125Б, этаж&nbsp;3, каб.&nbsp;5&nbsp;(рабочее время c&nbsp;10:00 до&nbsp;17:00) <br> Вход со&nbsp;двора, 2&nbsp;этаж.

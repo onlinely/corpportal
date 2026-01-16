@@ -3,7 +3,7 @@ $requiredModules = include(__DIR__.'/install/require.php');
 foreach ($requiredModules as $module){
     \Bitrix\Main\Loader::includeModule($module);
 }
-CModule::AddAutoloadClasses('protobyte.protocorp', array(
+CModule::AddAutoloadClasses('onlinely.protocorp', array(
 ));
 
 IncludeModuleLangFile(__FILE__);
@@ -16,11 +16,11 @@ class CProtoCorp
 	{
 		if ($GLOBALS["USER"]->IsAdmin() && COption::GetOptionString("main", "wizard_solution", "", SITE_ID) == "protocorp")
 		{
-			$GLOBALS["APPLICATION"]->SetAdditionalCSS("/bitrix/wizards/protobyte/protocorp/css/panel.css"); 
+			$GLOBALS["APPLICATION"]->SetAdditionalCSS("/bitrix/wizards/onlinely/protocorp/css/panel.css"); 
 
 			$arMenu = Array(
 				Array(		
-					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardSiteID=".SITE_ID."&wizardName=protobyte:protocorp&".bitrix_sessid_get())."')",
+					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardSiteID=".SITE_ID."&wizardName=onlinely:protocorp&".bitrix_sessid_get())."')",
 					"ICON" => "bx-popup-item-wizard-icon",
 					"TITLE" => GetMessage("STOM_BUTTON_TITLE_W1"),
 					"TEXT" => GetMessage("STOM_BUTTON_NAME_W1"),
@@ -28,7 +28,7 @@ class CProtoCorp
 			);
 
 			$GLOBALS["APPLICATION"]->AddPanelButton(array(
-				"HREF" => "/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=protobyte:protocorp&wizardSiteID=".SITE_ID."&".bitrix_sessid_get(),
+				"HREF" => "/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=onlinely:protocorp&wizardSiteID=".SITE_ID."&".bitrix_sessid_get(),
 				"ID" => "protocorp_wizard",
 				"ICON" => "bx-panel-site-wizard-icon",
 				"MAIN_SORT" => 2500,

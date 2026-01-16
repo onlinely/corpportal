@@ -7,9 +7,9 @@ use Bitrix\Main\Loader;
 
 IncludeModuleLangFile(__FILE__);
 
-class protobyte_protocorp extends CModule
+class onlinely_protocorp extends CModule
 {
-    var $MODULE_ID = 'protobyte.protocorp';
+    var $MODULE_ID = 'onlinely.protocorp';
     protected $installPath = '';
 
     public $requiredModules = [];
@@ -35,7 +35,7 @@ class protobyte_protocorp extends CModule
 	{
 		global $DB, $DBType, $APPLICATION;
 
-		RegisterModuleDependences("main", "OnBeforeProlog", "protobyte.protocorp", "CProtoCorp", "ShowPanel");
+		RegisterModuleDependences("main", "OnBeforeProlog", "onlinely.protocorp", "CProtoCorp", "ShowPanel");
 
 		return true;
 	}
@@ -44,7 +44,7 @@ class protobyte_protocorp extends CModule
 	{
 		global $DB, $DBType, $APPLICATION;
 
-		UnRegisterModuleDependences("main", "OnBeforeProlog", "protobyte.protocorp", "CProtoCorp", "ShowPanel");
+		UnRegisterModuleDependences("main", "OnBeforeProlog", "onlinely.protocorp", "CProtoCorp", "ShowPanel");
 
 		return true;
 	}
@@ -61,14 +61,14 @@ class protobyte_protocorp extends CModule
 
 	function InstallFiles()
 	{
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/protobyte.protocorp/install/wizards/protobyte/protocorp", $_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards/protobyte/protocorp", true, true);
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/protobyte.protocorp/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/onlinely.protocorp/install/wizards/onlinely/protocorp", $_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards/onlinely/protocorp", true, true);
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/onlinely.protocorp/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 		return true;
 	}
 
 	function UnInstallFiles()
 	{
-		DeleteDirFilesEx("/bitrix/wizards/protobyte/protocorp");
+		DeleteDirFilesEx("/bitrix/wizards/onlinely/protocorp");
 		return true;
 	}
 

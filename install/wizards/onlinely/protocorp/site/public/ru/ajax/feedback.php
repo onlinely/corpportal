@@ -10,7 +10,7 @@ $productName = htmlspecialchars($request->get("nameprod"), ENT_QUOTES);
 
 
 $APPLICATION->IncludeComponent(
-    "protobyte:main.feedback",
+    "onlinely:main.feedback",
     "feedback",
     Array(
         "OK_TEXT" => "Спасибо, ваше сообщение принято.",

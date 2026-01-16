@@ -155,7 +155,7 @@
 				</div>
 				<div class="footer__bottom-item">
 					<div class="footer__copyright">
-						<a class="protobyte_copy" href="https://protobyte.ru" target="_blank"><img alt="<?=getMessage('COMPANY_MIN')?>" title="<?=getMessage('COMPANY_FULL')?>" src="<?=SITE_TEMPLATE_PATH?>/img/protobyte-copy-color-88-22.png"></a>
+						<a class="onlinely_copy" href="https://onlinely.ru" target="_blank"><img alt="<?=getMessage('COMPANY_MIN')?>" title="<?=getMessage('COMPANY_FULL')?>" src="<?=SITE_TEMPLATE_PATH?>/img/onlinely-copy-color-88-22.png"></a>
 						<span id="bx-composite-banner"></span>
 					</div>
 				</div>
@@ -182,7 +182,7 @@
 	<div class="modal fancybox__content" style="width: 500px;" id="dialog-content" style="display: none;"></div>
 </div>
 <?$APPLICATION->IncludeComponent(
-			"protobyte:settings.protocorp", 
+			"onlinely:settings.protocorp", 
 			".default", 
 			array(
 				"COMPONENT_TEMPLATE" => ".default",

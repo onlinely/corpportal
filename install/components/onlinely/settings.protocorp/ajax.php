@@ -2,7 +2,7 @@
 <?define("NO_AGENT_CHECK", true);?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");?>
 <?
-if( !\Bitrix\Main\Loader::includeModule("protobyte.protocorp")){
+if( !\Bitrix\Main\Loader::includeModule("onlinely.protocorp")){
 	die();
 }
 
@@ -13,7 +13,7 @@ if(!$USER->IsAdmin() ){
 }
 $request = \Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 $requestValues = $request->getPostList()->toArray();
-$ProtoSettings = Protobyte\Protocorp\ProtoSettingsCorp::getInstance();
+$ProtoSettings = Onlinely\Protocorp\ProtoSettingsCorp::getInstance();
 if(!empty($requestValues["action"])){
 
 	if($requestValues["action"] == "saveSettings"){
