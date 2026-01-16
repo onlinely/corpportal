@@ -1,5 +1,5 @@
 <?
-namespace Onlinely\Protocorp;
+namespace Onlinely\Primecorp;
 use Bitrix\Main\Config\Option;
 
 class ProtoSettingsCorp {

@@ -11,7 +11,7 @@ if(	!\Bitrix\Main\Loader::includeModule("onlinely.primecorp")){
 }
 	$arResult = array();
 
-	$ProtoSettings = Onlinely\Protocorp\ProtoSettingsCorp::getInstance();
+	$ProtoSettings = Onlinely\Primecorp\ProtoSettingsCorp::getInstance();
 	$arResult["CURRENT_SETTINGS"] = $ProtoSettings->getCurrentSettings();
 	$arResult["DEFAULT_SETTINGS"] = $ProtoSettings->getDefaultSettings();
 	$arResult["COLOR_ARRAY"] = $ProtoSettings->setColorThemes();
