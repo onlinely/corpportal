@@ -1,0 +1,1 @@
+<img src="<?=SITE_DIR?>include/img/logo-black.png" loading='lazy' alt="" width="123" height="23">

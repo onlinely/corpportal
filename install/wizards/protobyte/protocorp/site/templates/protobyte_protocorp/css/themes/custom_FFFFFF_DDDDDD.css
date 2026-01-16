@@ -1,0 +1,255 @@
+.fancybox__content .is-close-btn svg path {
+	stroke: #FFFFFF;
+  }
+  .header__tel a:hover {
+	color: #FFFFFF;
+  }
+  .header__messengers a svg {
+	fill: #FFFFFF;
+  }
+  .header__burger:after {
+	background-color: #FFFFFF;
+  }
+  .header__burger:before {
+	background-color: #FFFFFF;
+  }
+  .header__burger span {
+	background-color: #FFFFFF;
+  }
+  .header__search-mobile-btn svg {
+	stroke: #FFFFFF;
+  }
+  .search__btn svg {
+	stroke: #FFFFFF;
+  }
+  .search__close svg path {
+	stroke: #FFFFFF;
+  }
+  .btn-default {
+	background: #FFFFFF;
+  }
+  .btn-link {
+	color: #FFFFFF;
+  }
+  .btn-transparent {
+	border: 1px solid #FFFFFF;
+  }
+  .btn-transparent:hover {
+	background: #FFFFFF;
+  }
+  .footer svg {
+	fill: #FFFFFF;
+  }
+  .footer__menu-list a.selected,
+  .footer__menu-list a:hover {
+	color: #FFFFFF;
+  }
+  .footer__tel a:hover {
+	color: #FFFFFF;
+  }
+  .footer__address a:hover {
+	color: #FFFFFF;
+  }
+  .footer__email a:hover {
+	color: #FFFFFF;
+  }
+  .banners-block .banners .swiper-pagination-bullet {
+	border: 1px solid #FFFFFF;
+  }
+  .banners-block .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	border: 6px solid #FFFFFF;
+  }
+  .teasers__icon svg {
+	stroke: #FFFFFF;
+  }
+  .page-block__link a {
+	color: #FFFFFF;
+  }
+  .card:hover .card__title a {
+	color: #FFFFFF;
+  }
+  .card__title a:hover {
+	color: #FFFFFF;
+  }
+  .section-list__card a:hover .section-list__icon {
+	background: #FFFFFF;
+  }
+  .section-list__icon {
+	border: 1px solid #FFFFFF;
+  }
+  .product:hover .product__name a {
+	color: #FFFFFF;
+  }
+  .product__name a:hover {
+	color: #FFFFFF;
+  }
+  .teasers-text__icon svg {
+	stroke: #FFFFFF;
+  }
+  .partners .swiper-pagination-bullet {
+	border: 1px solid #FFFFFF;
+  }
+  .partners .swiper-pagination-bullet-active {
+	border: 6px solid #FFFFFF;
+  }
+  .about-block ul li::before {
+	background-color: #FFFFFF;
+  }
+  .main-color {
+	color: #FFFFFF;
+  }
+  .breadcrumbs__link:hover span {
+	color: #FFFFFF;
+  }
+  .smart-filter .smart-filter-checkbox-text:hover::before,
+  .smart-filter
+	.smart-filter-input-group-checkbox-pictures
+	.smart-filter-checkbox-label.bx-active,
+  .smart-filter
+	.smart-filter-input-group-checkbox-pictures
+	.smart-filter-checkbox-label:hover {
+	border: 1px solid #FFFFFF;
+  }
+  .smart-filter .smart-filter-angles {
+	font-size: 8px;
+	color: #FFFFFF;
+  }
+  .smart-filter-angle svg {
+	stroke: #FFFFFF;
+  }
+  .main-wrapper input[type="checkbox"]:checked + label:before {
+	background: #FFFFFF;
+  }
+  .bx-filter .bx-filter-popup-result a:hover,
+  .smart-filter-checkbox-label:hover
+	.smart-filter-input-group-checkbox-pictures-param-text,
+  .smart-filter-parameters-box-title:hover
+	.smart-filter-parameters-box-title-text {
+	color: #FFFFFF;
+  }
+  .smart-filter-question {
+	background: #FFFFFF;
+  }
+  .bx_compare .bx_sort_container .sortbutton:hover,
+  .smart-filter-question:hover {
+	background: #FFFFFF;
+  }
+  .bx-filter .bx-filter-popup-result a {
+	color: #FFFFFF;
+  }
+  .bx-filter .bx-ui-slider-pricebar-v {
+	background: #FFFFFF;
+  }
+  .bx-filter .bx-ui-slider-handle {
+	background: #FFFFFF;
+  }
+  .custom-radio + label:hover::before {
+	border: 1px solid #FFFFFF;
+  }
+  .custom-radio:checked + label::before {
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+  }
+  .smart-filter__btn-apply {
+	background: #FFFFFF;
+  }
+  .smart-filter__btn-reset:hover {
+	color: #FFFFFF;
+  }
+  .smart-filter__spoiler-btn svg {
+	stroke: #FFFFFF;
+  }
+  .sort-panel__item.active i {
+	background: #FFFFFF;
+  }
+  .pagination .bx-active span {
+	background: #FFFFFF;
+  }
+  .pagination li a span:hover {
+	color: #FFFFFF;
+  }
+  .catalog-detail .swiper-button-next,
+  .catalog-detail .swiper-button-prev {
+	border: 1.5px solid #FFFFFF;
+  }
+  .catalog-detail .swiper-button-next:hover,
+  .catalog-detail .swiper-button-prev:hover {
+	background: #FFFFFF;
+  }
+  .catalog-detail .swiper-pagination-bullet-active {
+	background: #FFFFFF;
+  }
+  .catalog-detail .tabs__caption li.active {
+	border-bottom: 1px solid #FFFFFF;
+  }
+  .typography a {
+	font-weight: 400;
+	color: #FFFFFF;
+  }
+  .typography .table-color thead th {
+	background-color: #FFFFFF;
+  }
+  .sidebar-menu li a.selected,
+  .sidebar-menu li a:hover {
+	color: #FFFFFF;
+  }
+  .header__list > li a.selected,
+  .header__list > li a:hover {
+	color: #FFFFFF;
+  }
+  .header__list > li a.selected svg,
+  .header__list > li a:hover svg {
+	stroke: #FFFFFF;
+  }
+  .footer__policy a:hover {
+	color: #FFFFFF;
+  }
+  .feedback__consent label:hover::before {
+	border-color: #FFFFFF;
+  }
+  .feedback__consent input[type="checkbox"]:checked + label::before {
+	background: #FFFFFF;
+	border-color: #FFFFFF;
+  }
+  .feedback__consent label a {
+	color: #FFFFFF;
+  }
+  .feedback__consent input[type="checkbox"]:invalid + label::before {
+	border-color: #FFFFFF;
+  }
+  .header__messengers a:hover svg {
+	fill: #DDDDDD;
+  }
+  .search__btn:hover svg {
+	stroke: #DDDDDD;
+  }
+  .btn-default:hover {
+	background: #DDDDDD;
+  }
+  .btn-link:hover {
+	color: #DDDDDD;
+  }
+  .footer a:hover svg {
+	fill: #DDDDDD;
+  }
+  .banners-block .banners .swiper-pagination-bullet:hover {
+	border: 1px solid #DDDDDD;
+  }
+  .page-block__link a:hover {
+	color: #DDDDDD;
+  }
+  .smart-filter__btn-apply:hover {
+	background: #DDDDDD;
+  }
+  .typography a:hover {
+	color: #DDDDDD;
+  }
+  .header-dark .header__list>li a.selected,
+  .header-dark .header__tel a:hover,
+  .header-dark .header__list>li a:hover {
+      color: #FFFFFF;
+  }
+  .header-dark .header__link:hover svg {
+      stroke: #FFFFFF;
+  }
+  

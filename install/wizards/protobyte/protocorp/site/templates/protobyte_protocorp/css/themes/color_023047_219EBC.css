@@ -1,0 +1,254 @@
+.fancybox__content .is-close-btn svg path {
+	stroke: #023047;
+  }
+  .header__tel a:hover {
+	color: #023047;
+  }
+  .header__messengers a svg {
+	fill: #023047;
+  }
+  .header__burger:after {
+	background-color: #023047;
+  }
+  .header__burger:before {
+	background-color: #023047;
+  }
+  .header__burger span {
+	background-color: #023047;
+  }
+  .header__search-mobile-btn svg {
+	stroke: #023047;
+  }
+  .search__btn svg {
+	stroke: #023047;
+  }
+  .search__close svg path {
+	stroke: #023047;
+  }
+  .btn-default {
+	background: #023047;
+  }
+  .btn-link {
+	color: #023047;
+  }
+  .btn-transparent {
+	border: 1px solid #023047;
+  }
+  .btn-transparent:hover {
+	background: #023047;
+  }
+  .footer svg {
+	fill: #023047;
+  }
+  .footer__menu-list a.selected,
+  .footer__menu-list a:hover {
+	color: #023047;
+  }
+  .footer__tel a:hover {
+	color: #023047;
+  }
+  .footer__address a:hover {
+	color: #023047;
+  }
+  .footer__email a:hover {
+	color: #023047;
+  }
+  .banners-block .banners .swiper-pagination-bullet {
+	border: 1px solid #023047;
+  }
+  .banners-block .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	border: 6px solid #023047;
+  }
+  .teasers__icon svg {
+	stroke: #023047;
+  }
+  .page-block__link a {
+	color: #023047;
+  }
+  .card:hover .card__title a {
+	color: #023047;
+  }
+  .card__title a:hover {
+	color: #023047;
+  }
+  .section-list__card a:hover .section-list__icon {
+	background: #023047;
+  }
+  .section-list__icon {
+	border: 1px solid #023047;
+  }
+  .product:hover .product__name a {
+	color: #023047;
+  }
+  .product__name a:hover {
+	color: #023047;
+  }
+  .teasers-text__icon svg {
+	stroke: #023047;
+  }
+  .partners .swiper-pagination-bullet {
+	border: 1px solid #023047;
+  }
+  .partners .swiper-pagination-bullet-active {
+	border: 6px solid #023047;
+  }
+  .about-block ul li::before {
+	background-color: #023047;
+  }
+  .main-color {
+	color: #023047;
+  }
+  .breadcrumbs__link:hover span {
+	color: #023047;
+  }
+  .smart-filter .smart-filter-checkbox-text:hover::before,
+  .smart-filter
+	.smart-filter-input-group-checkbox-pictures
+	.smart-filter-checkbox-label.bx-active,
+  .smart-filter
+	.smart-filter-input-group-checkbox-pictures
+	.smart-filter-checkbox-label:hover {
+	border: 1px solid #023047;
+  }
+  .smart-filter .smart-filter-angles {
+	font-size: 8px;
+	color: #023047;
+  }
+  .smart-filter-angle svg {
+	stroke: #023047;
+  }
+  .main-wrapper input[type="checkbox"]:checked + label:before {
+	background: #023047;
+  }
+  .bx-filter .bx-filter-popup-result a:hover,
+  .smart-filter-checkbox-label:hover
+	.smart-filter-input-group-checkbox-pictures-param-text,
+  .smart-filter-parameters-box-title:hover
+	.smart-filter-parameters-box-title-text {
+	color: #023047;
+  }
+  .smart-filter-question {
+	background: #023047;
+  }
+  .bx_compare .bx_sort_container .sortbutton:hover,
+  .smart-filter-question:hover {
+	background: #023047;
+  }
+  .bx-filter .bx-filter-popup-result a {
+	color: #023047;
+  }
+  .bx-filter .bx-ui-slider-pricebar-v {
+	background: #023047;
+  }
+  .bx-filter .bx-ui-slider-handle {
+	background: #023047;
+  }
+  .custom-radio + label:hover::before {
+	border: 1px solid #023047;
+  }
+  .custom-radio:checked + label::before {
+	border-color: #023047;
+	background-color: #023047;
+  }
+  .smart-filter__btn-apply {
+	background: #023047;
+  }
+  .smart-filter__btn-reset:hover {
+	color: #023047;
+  }
+  .smart-filter__spoiler-btn svg {
+	stroke: #023047;
+  }
+  .sort-panel__item.active i {
+	background: #023047;
+  }
+  .pagination .bx-active span {
+	background: #023047;
+  }
+  .pagination li a span:hover {
+	color: #023047;
+  }
+  .catalog-detail .swiper-button-next,
+  .catalog-detail .swiper-button-prev {
+	border: 1.5px solid #023047;
+  }
+  .catalog-detail .swiper-button-next:hover,
+  .catalog-detail .swiper-button-prev:hover {
+	background: #023047;
+  }
+  .catalog-detail .swiper-pagination-bullet-active {
+	background: #023047;
+  }
+  .catalog-detail .tabs__caption li.active {
+	border-bottom: 1px solid #023047;
+  }
+  .typography a {
+	font-weight: 400;
+	color: #023047;
+  }
+  .typography .table-color thead th {
+	background-color: #023047;
+  }
+  .sidebar-menu li a.selected,
+  .sidebar-menu li a:hover {
+	color: #023047;
+  }
+  .header__list > li a.selected,
+  .header__list > li a:hover {
+	color: #023047;
+  }
+  .header__list > li a.selected svg,
+  .header__list > li a:hover svg {
+	stroke: #023047;
+  }
+  .footer__policy a:hover {
+	color: #023047;
+  }
+  .feedback__consent label:hover::before {
+	border-color: #023047;
+  }
+  .feedback__consent input[type="checkbox"]:checked + label::before {
+	background: #023047;
+	border-color: #023047;
+  }
+  .feedback__consent label a {
+	color: #023047;
+  }
+  .feedback__consent input[type="checkbox"]:invalid + label::before {
+	border-color: #023047;
+  }
+  .header__messengers a:hover svg {
+	fill: #219EBC;
+  }
+  .search__btn:hover svg {
+	stroke: #219EBC;
+  }
+  .btn-default:hover {
+	background: #219EBC;
+  }
+  .btn-link:hover {
+	color: #219EBC;
+  }
+  .footer a:hover svg {
+	fill: #219EBC;
+  }
+  .banners-block .banners .swiper-pagination-bullet:hover {
+	border: 1px solid #219EBC;
+  }
+  .page-block__link a:hover {
+	color: #219EBC;
+  }
+  .smart-filter__btn-apply:hover {
+	background: #219EBC;
+  }
+  .typography a:hover {
+	color: #219EBC;
+  }
+  .header-dark .header__list>li a.selected,
+  .header-dark .header__tel a:hover,
+  .header-dark .header__list>li a:hover {
+      color: #023047;
+  }
+  .header-dark .header__link:hover svg {
+      stroke: #023047;
+  }
