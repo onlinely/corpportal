@@ -3,7 +3,7 @@ namespace Onlinely\Protocorp;
 use Bitrix\Main\Config\Option;
 
 class ProtoSettingsCorp {
-	private $moduleName = "onlinely.protocorp";
+	private $moduleName = "onlinely.primecorp";
 	private static $instance = false;
 
 	public static function getInstance(){
