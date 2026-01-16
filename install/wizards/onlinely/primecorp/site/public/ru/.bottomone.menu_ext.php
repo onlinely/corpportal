@@ -16,7 +16,7 @@ if (CModule::IncludeModule('iblock')) {
         }
 
         $aMenuLinksExt = $APPLICATION->IncludeComponent(
-            "protobyte:menu.sections",
+            "onlinely:menu.sections",
             "",
             array(
                 "IS_SEF" => "Y",
@@ -38,5 +38,8 @@ if (CModule::IncludeModule('iblock')) {
     }
 }
 
-$aMenuLinks = array_merge($aMenuLinksExt, $aMenuLinks);
+$aMenuLinks = array_merge(
+    is_array($aMenuLinksExt) ? $aMenuLinksExt : array(),
+    is_array($aMenuLinks) ? $aMenuLinks : array()
+);
 ?>
