@@ -13,7 +13,7 @@ if(!$USER->IsAdmin() ){
 }
 $request = \Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 $requestValues = $request->getPostList()->toArray();
-$ProtoSettings = Onlinely\Protocorp\ProtoSettingsCorp::getInstance();
+$ProtoSettings = Onlinely\Primecorp\ProtoSettingsCorp::getInstance();
 if(!empty($requestValues["action"])){
 
 	if($requestValues["action"] == "saveSettings"){
