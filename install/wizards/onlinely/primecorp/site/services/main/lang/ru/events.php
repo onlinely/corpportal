@@ -1,7 +1,7 @@
 <?php
-$MESS["PROTOCORP_FEEDBACK_NAME"] = "Сообщение обратной связи";
+$MESS["PRIMECORP_FEEDBACK_NAME"] = "Сообщение обратной связи";
 
-$MESS["PROTOCORP_FEEDBACK_DESCRIPTION"] = "#AUTHOR# - Автор сообщения
+$MESS["PRIMECORP_FEEDBACK_DESCRIPTION"] = "#AUTHOR# - Автор сообщения
 #AUTHOR_EMAIL# - Email автора сообщения
 #PHONE# - Телефон
 #TEXT# - Текст сообщения
@@ -11,9 +11,9 @@ $MESS["PROTOCORP_FEEDBACK_DESCRIPTION"] = "#AUTHOR# - Автор сообщен�
 #TITLE_FORM# - Название формы
 #PAGE_FORM# - Страница отправки формы";
 
-$MESS["PROTOCORP_FEEDBACK_TEMPLATE_SUBJECT"] = "#SITE_NAME#: Сообщение из формы \"#TITLE_FORM#\", от кого #DEFAULT_EMAIL_FROM# кому #DEFAULT_EMAIL_FROM#";
+$MESS["PRIMECORP_FEEDBACK_TEMPLATE_SUBJECT"] = "#SITE_NAME#: Сообщение из формы \"#TITLE_FORM#\", от кого #DEFAULT_EMAIL_FROM# кому #DEFAULT_EMAIL_FROM#";
 
-$MESS["PROTOCORP_FEEDBACK_TEMPLATE_MESSAGE"] = "Информационное сообщение сайта #SITE_NAME#<br>
+$MESS["PRIMECORP_FEEDBACK_TEMPLATE_MESSAGE"] = "Информационное сообщение сайта #SITE_NAME#<br>
 ------------------------------------------<br><br>
 Вам было отправлено сообщение через форму обратной связи<br><br>
 <b>Автор:</b> #AUTHOR#<br>

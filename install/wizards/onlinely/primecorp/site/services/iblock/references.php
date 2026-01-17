@@ -43,7 +43,7 @@ if (!$dbHblock->Fetch())
 	{
 		$ID = $result->getId();
 
-		$_SESSION["PROTOCORP_HBLOCK_COLOR_ID"] = $ID;
+		$_SESSION["PRIMECORP_HBLOCK_COLOR_ID"] = $ID;
 
 		$hldata = HL\HighloadBlockTable::getById($ID)->fetch();
 		$hlentity = HL\HighloadBlockTable::compileEntity($hldata);
