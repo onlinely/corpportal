@@ -6,8 +6,8 @@ $host = $_SERVER['HTTP_HOST'];
 $curPage = $APPLICATION->GetCurPage(true);
 $GLOBALS['full_url'] = $protocol . $host . $curPage;
 if(\Bitrix\Main\Loader::includeModule("onlinely.primecorp")){
-	$ProtoSettings = \Onlinely\Primecorp\ProtoSettingsCorp::getInstance();
-	$arTemplateSettings = $ProtoSettings->getCurrentSettings();
+	$OnlinelySettings = \Onlinely\Primecorp\OnlinelySettingsCorp::getInstance();
+	$arTemplateSettings = $OnlinelySettings->getCurrentSettings();
 	$FILE_NAME_COLOR = 'FILE_NAME_COLOR_' . SITE_ID;
 };
 ?>

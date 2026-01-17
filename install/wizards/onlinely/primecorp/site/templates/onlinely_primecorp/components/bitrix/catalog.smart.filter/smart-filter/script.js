@@ -375,8 +375,8 @@ JCSmartFilter.prototype.hideFilterProps = function(element)
 			}
 		}).animate();
 
-		BX.addClass(propAngle, "_proto-arrow-bottom");
-		BX.removeClass(propAngle, "_proto-arrow-top");
+		BX.addClass(propAngle, "_onlinely-arrow-bottom");
+		BX.removeClass(propAngle, "_onlinely-arrow-top");
 	}
 	else
 	{
@@ -401,8 +401,8 @@ JCSmartFilter.prototype.hideFilterProps = function(element)
 		}).animate();
 
 		BX.addClass(obj, "bx-active");
-		BX.removeClass(propAngle, "_proto-arrow-bottom");
-		BX.addClass(propAngle, "_proto-arrow-top");
+		BX.removeClass(propAngle, "_onlinely-arrow-bottom");
+		BX.addClass(propAngle, "_onlinely-arrow-top");
 	}
 };
 

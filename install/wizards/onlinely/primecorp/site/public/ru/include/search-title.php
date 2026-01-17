@@ -2,9 +2,9 @@
 	"bitrix:search.title",
 	"search-title",
 	Array(
-		"CATEGORY_0" => array("iblock_protomarket_catalog"),
+		"CATEGORY_0" => array("iblock_onlinelymarket_catalog"),
 		"CATEGORY_0_TITLE" => "",
-		"CATEGORY_0_iblock_protomarket_catalog" => array(),
+		"CATEGORY_0_iblock_onlinelymarket_catalog" => array(),
 		"CHECK_DATES" => "N",
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",

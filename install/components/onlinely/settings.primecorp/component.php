@@ -11,12 +11,12 @@ if(	!\Bitrix\Main\Loader::includeModule("onlinely.primecorp")){
 }
 	$arResult = array();
 
-	$ProtoSettings = Onlinely\Primecorp\ProtoSettingsCorp::getInstance();
-	$arResult["CURRENT_SETTINGS"] = $ProtoSettings->getCurrentSettings();
-	$arResult["DEFAULT_SETTINGS"] = $ProtoSettings->getDefaultSettings();
-	$arResult["COLOR_ARRAY"] = $ProtoSettings->setColorThemes();
+	$OnlinelySettings = Onlinely\Primecorp\OnlinelySettingsCorp::getInstance();
+	$arResult["CURRENT_SETTINGS"] = $OnlinelySettings->getCurrentSettings();
+	$arResult["DEFAULT_SETTINGS"] = $OnlinelySettings->getDefaultSettings();
+	$arResult["COLOR_ARRAY"] = $OnlinelySettings->setColorThemes();
 	
-		$arResult["ISSET_CUSTOM_COLOR_FOLDER"] = $ProtoSettings->searchCustomColor($_SERVER["DOCUMENT_ROOT"].SITE_TEMPLATE_PATH."/css/themes/");
+		$arResult["ISSET_CUSTOM_COLOR_FOLDER"] = $OnlinelySettings->searchCustomColor($_SERVER["DOCUMENT_ROOT"].SITE_TEMPLATE_PATH."/css/themes/");
 		$logoOptionName = "LOGO_FILE_ID_" . SITE_ID;
 		$logoFileId = (int)\Bitrix\Main\Config\Option::get("onlinely.primecorp", $logoOptionName, 0);
 		$arResult["LOGO_FILE_ID"] = $logoFileId;

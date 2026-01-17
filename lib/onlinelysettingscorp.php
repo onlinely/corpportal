@@ -2,14 +2,14 @@
 namespace Onlinely\Primecorp;
 use Bitrix\Main\Config\Option;
 
-class ProtoSettingsCorp {
+class OnlinelySettingsCorp {
 	private $moduleName = "onlinely.primecorp";
 	private static $instance = false;
 
 	public static function getInstance(){
 
 		if (!self::$instance){
-			self::$instance = new ProtoSettingsCorp();
+			self::$instance = new OnlinelySettingsCorp();
 		}
 		return self::$instance;
 	}
