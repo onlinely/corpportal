@@ -13,7 +13,7 @@ if(!$USER->IsAdmin() ){
 }
 $request = \Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 $requestValues = $request->getPostList()->toArray();
-$ProtoSettings = Onlinely\Primecorp\ProtoSettingsCorp::getInstance();
+$OnlinelySettings = Onlinely\Primecorp\OnlinelySettingsCorp::getInstance();
 if(!empty($requestValues["action"])){
 
 	if($requestValues["action"] == "saveSettings"){
@@ -75,7 +75,7 @@ if(!empty($requestValues["action"])){
 				$returnArray["ERROR_MAKE_COLOR_FILE"] = "UPDATE_THEME_ERROR";
 			}
 			$arFiles = array();
-			$arFiles = $ProtoSettings->scanDir($_SERVER["DOCUMENT_ROOT"] . $templatePath . '/css/themes/');
+			$arFiles = $OnlinelySettings->scanDir($_SERVER["DOCUMENT_ROOT"] . $templatePath . '/css/themes/');
 			$returnArray["SUCCESS_MAKE_COLOR_FILE"] = "Y";
 			foreach($arFiles as $file){
 				if($file != 'custom_FFFFFF_DDDDDD.css' && $file != $NewCurrentFileName){
@@ -91,7 +91,7 @@ if(!empty($requestValues["action"])){
 		}
 
 
-		if($saveResult = $ProtoSettings->saveSettings($requestValues)){
+		if($saveResult = $OnlinelySettings->saveSettings($requestValues)){
 			$returnArray["SUCCESS"] = "Y";
 		}
 		else{

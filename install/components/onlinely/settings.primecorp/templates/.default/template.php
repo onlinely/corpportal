@@ -12,7 +12,7 @@
 	</div>
 	<div class="settings__window" id="settings-parameters-info" data-site-id="<?=SITE_ID?>" data-template-path="<?=SITE_TEMPLATE_PATH?>" data-component-path="<?=$this->getComponent()->getPath();?>">
 		<div class="settings__head">
-			<?=getMessage('SETTINGS_PROTO_HEAD')?>
+			<?=getMessage('SETTINGS_ONLINELY_HEAD')?>
 		</div>
 		<?if(!empty($arResult['COLOR_ARRAY'])):?>
 			<div class="settings__block settings__color settings__type-link" data-id="FILE_NAME_COLOR_<?=SITE_ID?>">
@@ -23,7 +23,7 @@
 						data-hover-color="<?=(!empty($arResult["CURRENT_SETTINGS"][$optionFileName]["HOVER"])) ? $arResult["CURRENT_SETTINGS"][$optionFileName]["HOVER"] : ''?>"
 						style="display:none;" >
 				</div>
-				<div class="settings__block-title"><?=getMessage('SETTINGS_PROTO_COLOR_TITLE')?></div>
+				<div class="settings__block-title"><?=getMessage('SETTINGS_ONLINELY_COLOR_TITLE')?></div>
 				<div class="settings__color-list">
 					<?foreach($arResult['COLOR_ARRAY'] as $name => $color):?>
 						<?if(!empty($color['MAIN']) && $name != 'CUSTOM'):?>
@@ -41,7 +41,7 @@
 				</div>
 				<div class="settings__hr"></div>
 				<div class="settings__custom-color-title">
-					<?=GetMessage("SETTINGS_PROTO_CUSTOM_COLOR_TITLE")?>
+					<?=GetMessage("SETTINGS_ONLINELY_CUSTOM_COLOR_TITLE")?>
 				</div>
 				<div class="settings__custom-color-fields">
 					<div class="settings__custom-color-field">
@@ -50,7 +50,7 @@
 								id="settings-custom-color-main-show"
 								style="background:<?=(!empty($arResult["CURRENT_SETTINGS"][$optionFileName]["MAIN"])) ? $arResult["CURRENT_SETTINGS"][$optionFileName]["MAIN"] : ''?>;"></div>
 							<div class="settings__custom-color-field-inp">
-								<div class="settings__custom-color-label"><?=GetMessage("SETTINGS_PROTO_CUSTOM_COLOR_MAIN")?></div>
+								<div class="settings__custom-color-label"><?=GetMessage("SETTINGS_ONLINELY_CUSTOM_COLOR_MAIN")?></div>
 								<input type="text" id="settings-custom-color-main" class="settings__custom-color-picker" value="<?=(!empty($arResult["CURRENT_SETTINGS"][$optionFileName]["MAIN"])) ? $arResult["CURRENT_SETTINGS"][$optionFileName]["MAIN"] : ''?>" autocomplete="off">
 							</div>
 						</div>
@@ -61,7 +61,7 @@
 							id="settings-custom-color-hover-show"
 							style="background:<?=(!empty($arResult["CURRENT_SETTINGS"][$optionFileName]["HOVER"])) ? $arResult["CURRENT_SETTINGS"][$optionFileName]["HOVER"] : ''?>;"></div>
 							<div class="settings__custom-color-field-inp">
-								<div class="settings__custom-color-label"><?=GetMessage("SETTINGS_PROTO_CUSTOM_COLOR_HOVER")?></div>
+								<div class="settings__custom-color-label"><?=GetMessage("SETTINGS_ONLINELY_CUSTOM_COLOR_HOVER")?></div>
 								<input type="text" id="settings-custom-color-hover" class="settings__custom-color-picker" value="<?=(!empty($arResult["CURRENT_SETTINGS"][$optionFileName]["HOVER"])) ? $arResult["CURRENT_SETTINGS"][$optionFileName]["HOVER"] : ''?>" autocomplete="off">
 							</div>
 						</div>
@@ -70,31 +70,31 @@
 			</div>
 		<?endif?>
 		<div class="settings__custom-color-message-error" style="display:none">
-			<?=GetMessage("SETTINGS_PROTO_CUSTOM_COLOR_WINDOW_ERROR")?>
+			<?=GetMessage("SETTINGS_ONLINELY_CUSTOM_COLOR_WINDOW_ERROR")?>
 		</div>
 		<div class="settings__custom-color-message-error-file" style="display:none">
-			<?=GetMessage("SETTINGS_PROTO_CUSTOM_COLOR_WINDOW_ERROR_FILE")?>
+			<?=GetMessage("SETTINGS_ONLINELY_CUSTOM_COLOR_WINDOW_ERROR_FILE")?>
 		</div>
 		<div class="settings__block settings__logo-upload">
-			<div class="settings__block-title"><?=getMessage("SETTINGS_PROTO_LOGO_TITLE")?></div>
+			<div class="settings__block-title"><?=getMessage("SETTINGS_ONLINELY_LOGO_TITLE")?></div>
 			<div class="settings__logo-preview">
 				<?if(!empty($arResult["LOGO_SRC"])):?>
-					<img src="<?=$arResult["LOGO_SRC"]?>" alt="<?=getMessage("SETTINGS_PROTO_LOGO_PREVIEW_ALT")?>" width="140">
+					<img src="<?=$arResult["LOGO_SRC"]?>" alt="<?=getMessage("SETTINGS_ONLINELY_LOGO_PREVIEW_ALT")?>" width="140">
 				<?else:?>
-					<span class="settings__logo-placeholder"><?=getMessage("SETTINGS_PROTO_LOGO_EMPTY")?></span>
+					<span class="settings__logo-placeholder"><?=getMessage("SETTINGS_ONLINELY_LOGO_EMPTY")?></span>
 				<?endif?>
 			</div>
 			<label class="settings__logo-upload-control">
-				<span class="settings__logo-upload-text"><?=getMessage("SETTINGS_PROTO_LOGO_UPLOAD")?></span>
+				<span class="settings__logo-upload-text"><?=getMessage("SETTINGS_ONLINELY_LOGO_UPLOAD")?></span>
 				<input type="file" class="settings__logo-file" accept="image/*">
 			</label>
 		</div>
 		<div class="settings__btns">
 			<div class="settings__save btn-default">
-				<?=getMessage('SETTINGS_PROTO_SAVE')?>
+				<?=getMessage('SETTINGS_ONLINELY_SAVE')?>
 			</div>
 			<div class="settings__close">
-				<?=getMessage('SETTINGS_PROTO_CLOSE')?>
+				<?=getMessage('SETTINGS_ONLINELY_CLOSE')?>
 			</div>
 		</div>
 		<div class="settings__save-error" style="display: none">

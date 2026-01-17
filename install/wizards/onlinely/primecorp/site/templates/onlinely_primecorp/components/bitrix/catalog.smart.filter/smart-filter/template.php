@@ -75,7 +75,7 @@ $this->setFrameMode(true);
 									<div class="smart-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
 										<span class="smart-filter-parameters-box-title-text"><?=$arItem["NAME"]?></span>
 										<span class="smart-filter-angle smart-filter-angle-up">
-											<span data-role="prop_angle" class="smart-filter-angles <?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>_proto-arrow-top<?else:?>_proto-arrow-bottom<?endif?>">
+											<span data-role="prop_angle" class="smart-filter-angles <?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>_onlinely-arrow-top<?else:?>_onlinely-arrow-bottom<?endif?>">
 												<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M1 5.5L4.78462 1.59618C4.81224 1.56582 4.8456 1.54162 4.88265 1.52508C4.91969 1.50853 4.95963 1.5 5 1.5C5.04037 1.5 5.08031 1.50853 5.11735 1.52508C5.1544 1.54162 5.18776 1.56582 5.21538 1.59618L9 5.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 												</svg>
@@ -204,7 +204,7 @@ $this->setFrameMode(true);
 										<?endif?>
 									</div>
 									<span class="smart-filter-angle smart-filter-angle-up">
-										<span data-role="prop_angle" class="smart-filter-angles <?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>_proto-arrow-top<?else:?>_proto-arrow-bottom<?endif?>">
+										<span data-role="prop_angle" class="smart-filter-angles <?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>_onlinely-arrow-top<?else:?>_onlinely-arrow-bottom<?endif?>">
 											<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M1 5.5L4.78462 1.59618C4.81224 1.56582 4.8456 1.54162 4.88265 1.52508C4.91969 1.50853 4.95963 1.5 5 1.5C5.04037 1.5 5.08031 1.50853 5.11735 1.52508C5.1544 1.54162 5.18776 1.56582 5.21538 1.59618L9 5.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 											</svg>
