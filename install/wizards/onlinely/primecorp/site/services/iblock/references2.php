@@ -11,8 +11,8 @@ global $USER_FIELD_MANAGER;
 if (!Loader::includeModule("highloadblock"))
 	return;
 
-$COLOR_ID = (int)$_SESSION["PROTOCORP_HBLOCK_COLOR_ID"];
-unset($_SESSION["PROTOCORP_HBLOCK_COLOR_ID"]);
+$COLOR_ID = (int)$_SESSION["PRIMECORP_HBLOCK_COLOR_ID"];
+unset($_SESSION["PRIMECORP_HBLOCK_COLOR_ID"]);
 
 
 //adding rows

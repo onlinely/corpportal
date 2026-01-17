@@ -6,8 +6,8 @@ if (!defined("WIZARD_DEFAULT_SITE_ID") && !empty($_REQUEST["wizardSiteID"]))
     define("WIZARD_DEFAULT_SITE_ID", $_REQUEST["wizardSiteID"]);
 
 $arWizardDescription = array(
-    "NAME" => GetMessage("PROTOCORP_WIZARD_NAME"),
-    "DESCRIPTION" => GetMessage("PROTOCORP_WIZARD_DESC"),
+    "NAME" => GetMessage("PRIMECORP_WIZARD_NAME"),
+    "DESCRIPTION" => GetMessage("PRIMECORP_WIZARD_DESC"),
     "VERSION" => "1.0.0",
     "START_TYPE" => "WINDOW",
     "WIZARD_TYPE" => "INSTALL",

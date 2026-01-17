@@ -1,7 +1,7 @@
 <?if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();?>
 	<?if($curPage != SITE_DIR."index.php"):?>
 		<?$is404 = defined("ERROR_404") && ERROR_404 === "Y";
-		$noSidebar = $is404 || preg_match("~^".SITE_DIR."(catalog|articles|news|services|projects)/~", $curPage) || $APPLICATION->GetPageProperty("PROTOCORP_HIDE_SIDEBAR") == 'Y';?>
+		$noSidebar = $is404 || preg_match("~^".SITE_DIR."(catalog|articles|news|services|projects)/~", $curPage) || $APPLICATION->GetPageProperty("PRIMECORP_HIDE_SIDEBAR") == 'Y';?>
 		<?if (!$noSidebar):?>
 			</div> <!-- content -->
 			<div class="sidebar">
@@ -206,4 +206,4 @@ $logoSrc = $logoFileId > 0 ? CFile::GetPath($logoFileId) : "";
 <?ob_start();?>
 <?= !$noSidebar ? 'page-content-sidebar' : '' ?>
 <?$content = ob_get_clean();
-$APPLICATION->AddViewContent("PROTOCORP_HIDE_SIDEBAR", $content);?>
+$APPLICATION->AddViewContent("PRIMECORP_HIDE_SIDEBAR", $content);?>

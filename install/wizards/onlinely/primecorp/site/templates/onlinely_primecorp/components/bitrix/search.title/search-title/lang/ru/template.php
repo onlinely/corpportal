@@ -1,3 +1,3 @@
 <?
-$MESS["PROTOCORP_SEARCH_PLACEHOLDER"] = "Поиск по сайту";
+$MESS["PRIMECORP_SEARCH_PLACEHOLDER"] = "Поиск по сайту";
 ?>

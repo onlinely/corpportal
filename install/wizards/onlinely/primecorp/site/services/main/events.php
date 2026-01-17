@@ -5,7 +5,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 if (!CModule::IncludeModule("main"))
     return;
 
-$eventType = "PROTOCORP_FEEDBACK";
+$eventType = "PRIMECORP_FEEDBACK";
 
 $rsET = CEventType::GetList([
     "TYPE_ID" => $eventType,
@@ -17,8 +17,8 @@ if (!$rsET->Fetch())
     $arFields    = [
         "LID"         => "ru",
         "EVENT_NAME"  => $eventType,
-        "NAME"        => GetMessage("PROTOCORP_FEEDBACK_NAME"),
-        "DESCRIPTION" => GetMessage("PROTOCORP_FEEDBACK_DESCRIPTION")
+        "NAME"        => GetMessage("PRIMECORP_FEEDBACK_NAME"),
+        "DESCRIPTION" => GetMessage("PRIMECORP_FEEDBACK_DESCRIPTION")
     ];
     $obEventType->Add($arFields);
 }
@@ -36,9 +36,9 @@ if (!$dbTemplate->Fetch())
         "LID"        => [WIZARD_SITE_ID],
         "EMAIL_FROM" => "#DEFAULT_EMAIL_FROM#",
         "EMAIL_TO"   => "#DEFAULT_EMAIL_FROM#",
-        "SUBJECT"    => GetMessage("PROTOCORP_FEEDBACK_TEMPLATE_SUBJECT"),
+        "SUBJECT"    => GetMessage("PRIMECORP_FEEDBACK_TEMPLATE_SUBJECT"),
         "BODY_TYPE"  => "html",
-        "MESSAGE"    => GetMessage("PROTOCORP_FEEDBACK_TEMPLATE_MESSAGE")
+        "MESSAGE"    => GetMessage("PRIMECORP_FEEDBACK_TEMPLATE_MESSAGE")
     ];
     $et = new CEventMessage;
     $et->Add($arTemplateFields);
