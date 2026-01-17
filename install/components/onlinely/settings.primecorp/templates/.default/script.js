@@ -40,6 +40,7 @@ $( document ).ready(function() {
 	function settingsSave (event){
 		$settingsItems = $settings__window.find(".settings__type-link");
 		ajaxFormData = new FormData();
+		var logoFile = $('.settings__logo-file')[0];
 		var currentColorFile = $('#current-color').data('file-color'),
 		currentColorType = $('#current-color').data('type-color'),
 		currentColorMain = $('#current-color').data('main-color'),
@@ -119,6 +120,9 @@ $( document ).ready(function() {
 
 		if(!$.isEmptyObject(ajaxFormData)){
 			if(resultMainColor && resultHoverColor){
+				if(logoFile && logoFile.files.length > 0){
+					ajaxFormData.append('logoFile', logoFile.files[0]);
+				}
 				sendSettings(ajaxFormData);
 			}
 		}
@@ -226,6 +230,21 @@ $( document ).ready(function() {
 	
 	$('.settings__save').on('click', function(){
 		settingsSave ();
+	});
+	$('.settings__logo-file').on('change', function(){
+		var file = this.files[0];
+		if(!file){
+			return;
+		}
+		if(!file.type.match('image.*')){
+			return;
+		}
+		var reader = new FileReader();
+		reader.onload = function(event){
+			var img = '<img src=\"' + event.target.result + '\" alt=\"\" width=\"140\">';
+			$('.settings__logo-preview').html(img);
+		};
+		reader.readAsDataURL(file);
 	});
 
 });
