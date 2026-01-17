@@ -12,3 +12,7 @@ $MESS["SETTINGS_SAVE_ERROR"] = "Ошибка сохранения настрое
 $MESS["SETTINGS_PROTO_CUSTOM_COLOR_WINDOW_BTN"] = "Создать";
 $MESS["SETTINGS_PROTO_SAVE"] = "Применить настройки";
 $MESS["SETTINGS_PROTO_CLOSE"] = "Закрыть";
+$MESS["SETTINGS_PROTO_LOGO_TITLE"] = "Логотип сайта";
+$MESS["SETTINGS_PROTO_LOGO_UPLOAD"] = "Загрузить логотип";
+$MESS["SETTINGS_PROTO_LOGO_EMPTY"] = "Логотип не выбран";
+$MESS["SETTINGS_PROTO_LOGO_PREVIEW_ALT"] = "Текущий логотип";

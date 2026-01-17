@@ -14,6 +14,11 @@
 	<?endif?>
 </div><!-- main-content -->
 
+<?php
+$logoOptionName = "LOGO_FILE_ID_" . SITE_ID;
+$logoFileId = (int)\Bitrix\Main\Config\Option::get("onlinely.primecorp", $logoOptionName, 0);
+$logoSrc = $logoFileId > 0 ? CFile::GetPath($logoFileId) : "";
+?>
 <footer class="footer">
 	<div class="container container--footer">
 		<div class="footer__wrapper">
@@ -155,7 +160,13 @@
 				</div>
 				<div class="footer__bottom-item">
 					<div class="footer__copyright">
-						<a class="onlinely_copy" href="https://onlinely.ru" target="_blank"><img alt="<?=getMessage('COMPANY_MIN')?>" title="<?=getMessage('COMPANY_FULL')?>" src="<?=SITE_TEMPLATE_PATH?>/img/onlinely-copy-color-88-22.png"></a>
+						<?if(!empty($logoSrc)):?>
+							<a class="onlinely_copy" href="<?=SITE_DIR?>">
+								<img alt="<?=getMessage('COMPANY_MIN')?>" src="<?=$logoSrc?>">
+							</a>
+						<?else:?>
+							<a class="onlinely_copy" href="https://onlinely.ru" target="_blank"><img alt="<?=getMessage('COMPANY_MIN')?>" title="<?=getMessage('COMPANY_FULL')?>" src="<?=SITE_TEMPLATE_PATH?>/img/onlinely-copy-color-88-22.png"></a>
+						<?endif?>
 						<span id="bx-composite-banner"></span>
 					</div>
 				</div>

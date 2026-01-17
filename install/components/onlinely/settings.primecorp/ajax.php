@@ -17,6 +17,23 @@ $ProtoSettings = Onlinely\Primecorp\ProtoSettingsCorp::getInstance();
 if(!empty($requestValues["action"])){
 
 	if($requestValues["action"] == "saveSettings"){
+		if(!empty($_FILES["logoFile"]) && is_uploaded_file($_FILES["logoFile"]["tmp_name"])){
+			$logoFile = $_FILES["logoFile"];
+			$validImage = CFile::GetImageSize($logoFile["tmp_name"]);
+			if($validImage === false){
+				die('Invalid logo file.');
+			}
+			$logoFileId = CFile::SaveFile($logoFile, "onlinely_primecorp");
+			if((int)$logoFileId > 0){
+				$logoOptionName = "LOGO_FILE_ID_" . $requestValues["siteId"];
+				$previousLogoId = (int)\Bitrix\Main\Config\Option::get("onlinely.primecorp", $logoOptionName, 0);
+				if($previousLogoId > 0){
+					CFile::Delete($previousLogoId);
+				}
+				\Bitrix\Main\Config\Option::set("onlinely.primecorp", $logoOptionName, $logoFileId);
+			}
+		}
+
 		$arColorsOld = $requestValues["currentColor"];
 		$arColors = $requestValues["replaceColor"];
 

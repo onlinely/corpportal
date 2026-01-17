@@ -75,6 +75,20 @@
 		<div class="settings__custom-color-message-error-file" style="display:none">
 			<?=GetMessage("SETTINGS_PROTO_CUSTOM_COLOR_WINDOW_ERROR_FILE")?>
 		</div>
+		<div class="settings__block settings__logo-upload">
+			<div class="settings__block-title"><?=getMessage("SETTINGS_PROTO_LOGO_TITLE")?></div>
+			<div class="settings__logo-preview">
+				<?if(!empty($arResult["LOGO_SRC"])):?>
+					<img src="<?=$arResult["LOGO_SRC"]?>" alt="<?=getMessage("SETTINGS_PROTO_LOGO_PREVIEW_ALT")?>" width="140">
+				<?else:?>
+					<span class="settings__logo-placeholder"><?=getMessage("SETTINGS_PROTO_LOGO_EMPTY")?></span>
+				<?endif?>
+			</div>
+			<label class="settings__logo-upload-control">
+				<span class="settings__logo-upload-text"><?=getMessage("SETTINGS_PROTO_LOGO_UPLOAD")?></span>
+				<input type="file" class="settings__logo-file" accept="image/*">
+			</label>
+		</div>
 		<div class="settings__btns">
 			<div class="settings__save btn-default">
 				<?=getMessage('SETTINGS_PROTO_SAVE')?>

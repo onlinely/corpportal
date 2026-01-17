@@ -43,23 +43,36 @@ if(\Bitrix\Main\Loader::includeModule("onlinely.primecorp")){
 	<div class="admin-panel"><?$APPLICATION->ShowPanel();?></div>
 	<div class="main-wrapper">
 		<header class="header header__inner ">
+			<?php
+			$logoOptionName = "LOGO_FILE_ID_" . SITE_ID;
+			$logoFileId = (int)\Bitrix\Main\Config\Option::get("onlinely.primecorp", $logoOptionName, 0);
+			$logoSrc = $logoFileId > 0 ? CFile::GetPath($logoFileId) : "";
+			?>
 			<div class="container header__container">
 				<div class="header__wrap-main">
 					<div class="header__logo">
 						<div class="header__logo-dark">
 							<a href="<?=SITE_DIR?>">
-								<?$APPLICATION->IncludeComponent("bitrix:main.include", "", [
-									"AREA_FILE_SHOW" => "file",
-									"PATH" => SITE_DIR . "include/logo-dark.php"
-								]); ?>
+								<?if(!empty($logoSrc)):?>
+									<img src="<?=$logoSrc?>" alt="<?=getMessage('COMPANY_MIN')?>">
+								<?else:?>
+									<?$APPLICATION->IncludeComponent("bitrix:main.include", "", [
+										"AREA_FILE_SHOW" => "file",
+										"PATH" => SITE_DIR . "include/logo-dark.php"
+									]); ?>
+								<?endif?>
 							</a>
 						</div>
 						<div class="header__logo-light">
 							<a href="<?=SITE_DIR?>">
-								<?$APPLICATION->IncludeComponent("bitrix:main.include", "", [
-									"AREA_FILE_SHOW" => "file",
-									"PATH" => SITE_DIR . "include/logo-light.php"
-								]); ?>
+								<?if(!empty($logoSrc)):?>
+									<img src="<?=$logoSrc?>" alt="<?=getMessage('COMPANY_MIN')?>">
+								<?else:?>
+									<?$APPLICATION->IncludeComponent("bitrix:main.include", "", [
+										"AREA_FILE_SHOW" => "file",
+										"PATH" => SITE_DIR . "include/logo-light.php"
+									]); ?>
+								<?endif?>
 							</a>
 						</div>
 					</div>
