@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("PROTOCORP_HIDE_SIDEBAR", "Y");
+$APPLICATION->SetPageProperty("PRIMECORP_HIDE_SIDEBAR", "Y");
 $APPLICATION->SetTitle("Контакты");
 ?>
 <div class="two-columns">

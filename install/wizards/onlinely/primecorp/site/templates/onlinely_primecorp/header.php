@@ -213,7 +213,7 @@ if(\Bitrix\Main\Loader::includeModule("onlinely.primecorp")){
 						Array('HIDE_ICONS' => 'Y')
 					);?>
 					<?endif?>
-				<div class="page-content <?=$APPLICATION->ShowViewContent("PROTOCORP_HIDE_SIDEBAR");?> <?=($notypography ? "" : "typography")?>">
+				<div class="page-content <?=$APPLICATION->ShowViewContent("PRIMECORP_HIDE_SIDEBAR");?> <?=($notypography ? "" : "typography")?>">
 					<div class="content">
 					<?if(!$noTitle):?>
 						<h1 class="page-title"><?$APPLICATION->ShowTitle(false);?></h1>

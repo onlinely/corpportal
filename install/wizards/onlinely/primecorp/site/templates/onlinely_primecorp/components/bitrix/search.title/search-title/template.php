@@ -28,7 +28,7 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
 <div id="<?echo $CONTAINER_ID?>" class="search">
 	<form action="<?echo $arResult["FORM_ACTION"]?>" name="search">
 		<div class="search__wrapper">
-			<input id="<?echo $INPUT_ID?>" placeholder="<?=GetMessage("PROTOCORP_SEARCH_PLACEHOLDER");?>" type="text" name="q" value="<?=htmlspecialcharsbx($_REQUEST["q"])?>" autocomplete="off" class="search__input"/>
+			<input id="<?echo $INPUT_ID?>" placeholder="<?=GetMessage("PRIMECORP_SEARCH_PLACEHOLDER");?>" type="text" name="q" value="<?=htmlspecialcharsbx($_REQUEST["q"])?>" autocomplete="off" class="search__input"/>
 			<button class="search__btn btn" type="submit" name="s">
 				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M6.76061 12.0769C3.7018 12.0769 1.22215 9.59727 1.22215 6.53846C1.22215 3.47965 3.7018 1 6.76061 1C9.81942 1 12.2991 3.47965 12.2991 6.53846C12.2991 9.59727 9.81942 12.0769 6.76061 12.0769Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />

@@ -28,13 +28,13 @@ use Bitrix\Highloadblock as HL;
 
 $dbHblock = HL\HighloadBlockTable::getList(
 	array(
-		"filter" => array("NAME" => "ColorProtocorp", "TABLE_NAME" => "color_primecorp")
+		"filter" => array("NAME" => "Colorprimecorp", "TABLE_NAME" => "color_primecorp")
 	)
 );
 if (!$dbHblock->Fetch())
 {
 	$data = array(
-		'NAME' => 'ColorProtocorp',
+		'NAME' => 'Colorprimecorp',
 		'TABLE_NAME' => 'color_primecorp',
 	);
 
@@ -43,7 +43,7 @@ if (!$dbHblock->Fetch())
 	{
 		$ID = $result->getId();
 
-		$_SESSION["PROTOCORP_HBLOCK_COLOR_ID"] = $ID;
+		$_SESSION["PRIMECORP_HBLOCK_COLOR_ID"] = $ID;
 
 		$hldata = HL\HighloadBlockTable::getById($ID)->fetch();
 		$hlentity = HL\HighloadBlockTable::compileEntity($hldata);

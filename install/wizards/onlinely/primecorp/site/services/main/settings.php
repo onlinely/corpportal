@@ -8,7 +8,7 @@ COption::SetOptionString(
     serialize(array(
         "description" => GetMessage("MAIN_OPT_DESCRIPTION"),
         "keywords" => GetMessage("MAIN_OPT_KEYWORDS"),
-        "PROTOCORP_HIDE_SIDEBAR" => GetMessage("MAIN_OPT_PROTOCORP_HIDE_SIDEBAR")
+        "PRIMECORP_HIDE_SIDEBAR" => GetMessage("MAIN_OPT_PRIMECORP_HIDE_SIDEBAR")
     )),
     false,
     WIZARD_SITE_ID
