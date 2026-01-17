@@ -24,10 +24,10 @@ class onlinely_primecorp extends CModule
         {
             $this->MODULE_VERSION = $arModuleVersion['VERSION'];
             $this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];
-	        $this->MODULE_NAME = Loc::getMessage('PROTO_PRIMECORP_MODULE_NAME');
-	        $this->MODULE_DESCRIPTION = Loc::getMessage('PROTO_PRIMECORP_MODULE_DESCRIPTION');
-	        $this->PARTNER_NAME     =  Loc::getMessage('PROTO_PRIMECORP_PARTNER_NAME');
-	        $this->PARTNER_URI      =  Loc::getMessage('PROTO_PRIMECORP_PARTNER_URI');
+	        $this->MODULE_NAME = Loc::getMessage('ONLINELY_PRIMECORP_MODULE_NAME');
+	        $this->MODULE_DESCRIPTION = Loc::getMessage('ONLINELY_PRIMECORP_MODULE_DESCRIPTION');
+	        $this->PARTNER_NAME     =  Loc::getMessage('ONLINELY_PRIMECORP_PARTNER_NAME');
+	        $this->PARTNER_URI      =  Loc::getMessage('ONLINELY_PRIMECORP_PARTNER_URI');
         }
     }
 
